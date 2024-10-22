@@ -39,3 +39,51 @@ ul li::marker { color: transparent;}
 .underline { display: inline-block; padding-bottom: 10px; position: relative; }
 .underline::after { bottom: 0px; content: ""; display: block; height: 2px; left: 50%; position: absolute; background: rgb(255, 255, 255); transition: width 0.3s ease 0s, left 0.3s ease 0s; width: 0px; }
 .underline:hover::after { width: 100%; left: 0px; }
+
+@media screen and (max-width: 768px) {
+  nav ul li a {
+    font-size: 12px;
+  }
+  #home .right p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #home .right h1 {
+    font-size: 24px;
+  }
+  #home .left img {
+    width: 80%; /* Adjust image for smaller devices */
+    margin: 0 auto;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.box-area li {
+  width: 5vw; /* Dynamically adjust size */
+  height: 5vh;
+}
+
+    
+@media screen and (max-width: 768px) {
+  .right h1 {
+    font-size: 24px; /* Adjust to smaller size for tablets */
+  }
+  .right p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .right h1 {
+    font-size: 18px; /* Smaller font for mobile screens */
+  }
+  .right p {
+    font-size: 14px;
+  }
+}

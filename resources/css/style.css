@@ -101,3 +101,16 @@ body {
 		opacity: 0;
 	}
 }
+
+@media screen and (max-width: 768px) {
+  .banner-text h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .box-area li {
+    display: none; /* Disable complex animation on small devices */
+  }
+}
+    
