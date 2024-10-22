@@ -35,7 +35,7 @@ ul li::marker { color: transparent;}
 #contact ul li a span { margin-left: 20px; padding-top: 10px; }
 #contact ul li a i { font-size: 40px; }
 #skills ul li { padding-top: 15px; padding-left: 15px; color: rgb(255, 255, 255); text-decoration: none; display: inline-block; font-size: 20px; margin: 0px 0px 50px; }
-#skills ul li img { align-items: center; width: 175px; }
+#skills ul li img { width: 150px; height: 150px; object-fit: contain; display: block; margin: 0 auto; }
 .underline { display: inline-block; padding-bottom: 10px; position: relative; }
 .underline::after { bottom: 0px; content: ""; display: block; height: 2px; left: 50%; position: absolute; background: rgb(255, 255, 255); transition: width 0.3s ease 0s, left 0.3s ease 0s; width: 0px; }
 .underline:hover::after { width: 100%; left: 0px; }
