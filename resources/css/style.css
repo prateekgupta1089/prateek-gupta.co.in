@@ -110,7 +110,10 @@ body {
 
 @media screen and (max-width: 480px) {
   .box-area li {
-    display: none; /* Disable complex animation on small devices */
+    display: none;
+  }
+  #resume iframe {
+    height: 450px;
   }
 }
 
