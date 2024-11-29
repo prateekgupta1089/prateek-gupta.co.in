@@ -110,7 +110,10 @@ body {
 
 @media screen and (max-width: 480px) {
   .box-area li {
-    display: none;
+    width: 15px;
+    height: 15px;
+    animation-duration: 12s;
+    bottom: -100px;
   }
   #resume iframe {
     height: auto;

@@ -35,11 +35,56 @@ ul li::marker { color: transparent;}
 #contact ul li a span { margin-left: 20px; padding-top: 10px; }
 #contact ul li a i { font-size: 40px; }
 #skills ul li { padding-top: 15px; padding-left: 15px; color: rgb(255, 255, 255); text-decoration: none; display: inline-block; font-size: 20px; margin: 0px 0px 50px; }
+#summary-section ul li::before {
+  content: "\2022";
+  color: #fff;
+  font-size: 24px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+#summary-section ul li {
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #fff;
+}
+/* li:hover { color: #f0f0f0; transition: color 0.3s ease; } */
 #skills ul li img { width: 150px; height: 150px; object-fit: contain; display: block; margin: 0 auto; }
 .underline { display: inline-block; padding-bottom: 10px; position: relative; }
 .underline::after { bottom: 0px; content: ""; display: block; height: 2px; left: 50%; position: absolute; background: rgb(255, 255, 255); transition: width 0.3s ease 0s, left 0.3s ease 0s; width: 0px; }
 .underline:hover::after { width: 100%; left: 0px; }
 
+@media screen and (max-width: 480px) {
+  #home .right h1 {
+    font-size: 24px;
+  }
+  #home .left img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  li {
+    font-size: 14px;
+  }
+  li::before {
+    font-size: 18px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .box-area li {
+    width: 10vw;
+    height: 10vh;
+  }
+  .right h1 {
+    font-size: 18px;
+  }
+  .right p {
+    font-size: 14px;
+  }
+}
+    
 @media screen and (max-width: 768px) {
   nav ul li a {
     font-size: 12px;
@@ -47,43 +92,16 @@ ul li::marker { color: transparent;}
   #home .right p {
     font-size: 16px;
   }
-}
-
-@media screen and (max-width: 480px) {
-  #home .right h1 {
-    font-size: 24px;
-  }
-  #home .left img {
-    width: 80%; /* Adjust image for smaller devices */
-    margin: 0 auto;
-  }
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-
-.box-area li {
-  width: 5vw; /* Dynamically adjust size */
-  height: 5vh;
-}
-
-    
-@media screen and (max-width: 768px) {
   .right h1 {
-    font-size: 24px; /* Adjust to smaller size for tablets */
+    font-size: 24px;
   }
   .right p {
     font-size: 16px;
   }
-}
-
-@media screen and (max-width: 480px) {
-  .right h1 {
-    font-size: 18px; /* Smaller font for mobile screens */
+  li {
+    font-size: 16px;
   }
-  .right p {
-    font-size: 14px;
+  li::before {
+    font-size: 20px;
   }
 }
